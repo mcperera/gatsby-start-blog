@@ -6,11 +6,20 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
       },
     },
     {
@@ -23,12 +32,17 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `posts`,
         path: `${__dirname}/src/posts`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
