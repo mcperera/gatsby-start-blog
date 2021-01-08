@@ -44,6 +44,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `roboto mono`,
+          `multi\:400,400i,700,700i`, // you can also specify font weights and styles
+        ],
+        display: "swap", //Swap with the default fonts
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
