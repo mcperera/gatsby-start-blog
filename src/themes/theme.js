@@ -12,9 +12,9 @@ export default {
     light1: "hsl(0,0%,97%)",
     light2: "hsl(0,0%,99%)",
   },
-  berakpoints: {
+  breakpoints: {
     mobile: "only screen and (max-width: 50rem)",
-    desktop: "only screen and (max-width: 65rem)",
+    tablet: "only screen and (max-width: 65rem)",
   },
   spacings: {
     xxSmall: ".25rem",
