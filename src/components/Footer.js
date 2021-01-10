@@ -4,7 +4,8 @@ import {
   FooterWrapper,
   FooterSocialWrapper,
   FooterSocialIcons,
-} from "./../elements/FooterElements"
+  P,
+} from "./../elements"
 
 export const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -57,7 +58,9 @@ export const Footer = () => {
             <img src={data.twitter.publicURL} alt="twitter" />
           </a>
         </FooterSocialIcons>
-        <p>© 2021 Madushan Perera All Rights Reserved</p>
+        <P size="xSmall" color="dark3">
+          © 2021 Madushan Perera All Rights Reserved.
+        </P>
       </FooterSocialWrapper>
     </FooterWrapper>
   )
