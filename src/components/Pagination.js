@@ -5,7 +5,7 @@ export const Pagination = ({ isFirst, isLast, prevPage, nextPage }) => {
   return (
     <PaginationWrapper isFirst={isFirst} isLast={isLast}>
       <PaginationElement to={prevPage}>Prevous Page</PaginationElement>
-      <PaginationElement tp={nextPage}>Next Page</PaginationElement>
+      <PaginationElement to={nextPage}>Next Page</PaginationElement>
     </PaginationWrapper>
   )
 }
