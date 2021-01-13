@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Blog`,
-    description: `Starting with Gatsby`,
-    author: `@gatsbyjs`,
+    title: `Gatsby Blog Test`,
+    description: `Starting with Gatsby :)`,
+    author: `@mcperera`,
+    image: `/office.jpg`,
+    url: `https://www.mcperera.com`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
